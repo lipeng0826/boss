@@ -1,7 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +22,8 @@ function App() {
         >
           Learn React
         </a>
+        <div id="react"></div>
+        <div id="vue"></div>
       </header>
     </div>
   );
