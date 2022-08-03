@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import { registerMicroApps, start } from 'qiankun';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root-boss'));
 root.render(
   <React.StrictMode>
     <App />
@@ -12,12 +12,12 @@ root.render(
 );
 
 registerMicroApps([
-  // {
-  //   name: 'vue app', // app name registered
-  //   entry: 'http://localhost:10000',
-  //   container: '#vue',
-  //   activeRule: '/vue.html',
-  // },
+  {
+    name: 'vue app', // app name registered
+    entry: 'http://localhost:3002',
+    container: '#vue',
+    activeRule: '/vue.html',
+  },
   {
     name: 'react app',
     entry: 'http://localhost:3001',
