@@ -20,13 +20,19 @@ registerMicroApps([
   },
   {
     name: 'vue app', // vue app
-    entry: 'http://localhost:3002',
+    // 开发环境
+    // entry: 'http://localhost:3002',
+    // nginx部署
+    entry: 'http://ijiaoyan.web.com/vue/index.html',
     container: '#vue',
     activeRule: '/vue.html',
   },
   {
     name: 'react app', // react app
-    entry: 'http://localhost:3001',
+    // 开发环境
+    // entry: 'http://localhost:3001',
+    // nginx部署
+    entry: 'http://ijiaoyan.web.com/react/index.html',
     container: '#react',
     activeRule: '/react.html',
   },
